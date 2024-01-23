@@ -40,17 +40,34 @@ body {
     border-radius: 10px;
 
     display: flex;
-    justify-content: end;
-    align-items: end;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
 
 }
-img {
+#lampOff {
     height: 30%;
     min-height: 30px;
     margin-top: 9px;
+    user-select:none
+}
+.content img {
+    height: 30%;
+    min-height: 30px;
+    margin-bottom: 9px;
+    user-select:none
+}
+.content-black {
+    height: 0%;
+    width: 112px;
+
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 .content {
-    height: 50px;
+    height: 100%;
     width: 112px;
 
     background-color: white;
@@ -58,7 +75,7 @@ img {
     border-radius: 8px;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: end;
 }
 /* Reset de estilos padrão para o input range */
 input[type="range"] {
